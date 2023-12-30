@@ -85,8 +85,6 @@ def set_easy():
     change_speed = 0.1
 
 
-
-
 def set_medium():
     global main_menu_loop
     global max_number_of_targets
@@ -115,8 +113,8 @@ def menu(font):
     text_rect = pygame.Rect(WIDTH/2 - 150, 200, 0, 0)
     WIN.blit(text, text_rect)
     Button(WIN, 50, 300, 200, 75, text="Easy", inactiveColour=GREEN, hoverColour=GREEN, onClick=lambda: set_easy())
-    Button(WIN, 300, 300, 200, 75, text="Medium", inactiveColour=ORANGE, hoverColour=ORANGE, onClick=lambda: set_easy())
-    Button(WIN, 550, 300, 200, 75, text="Hard", inactiveColour=RED, hoverColour=RED, onClick=lambda: set_easy())
+    Button(WIN, 300, 300, 200, 75, text="Medium", inactiveColour=ORANGE, hoverColour=ORANGE, onClick=lambda: set_medium())
+    Button(WIN, 550, 300, 200, 75, text="Hard", inactiveColour=RED, hoverColour=RED, onClick=lambda: set_hard())
 
     while main_menu_loop:
         events = pygame.event.get()
